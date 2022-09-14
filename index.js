@@ -1,9 +1,12 @@
 const inquirer = require("inquirer");
+const fs = require(`fs`);
 const Employee = require(`./lib/Employee`);
 const employeeQuestions = require(`./src/employeeQuestions`)
 const engineerQuestions = require(`./src/engineerQuestions`)
 const internQuestions = require(`./src/internQuestions`)
 const managerQuestions = require(`./src/managerQuestions`)
+const generateHTML = require(`./dist/generateHTML`)
+
 
 
 async function executeInquirers() {
@@ -59,6 +62,10 @@ async function executeInquirers() {
                                 } else {
                                     console.log(`Exiting program`);
                                     console.log(teamMembers);
+                                    async function writeToFile() {
+                                        await fs.writeFileSync(`index.html`, generateHTML(data))
+                                    }
+                                    writeToFile();
                                 }
                             })
                         }
@@ -110,6 +117,10 @@ async function executeInquirers() {
                                 } else {
                                     console.log(`Exiting program`);
                                     console.log(teamMembers);
+                                    async function writeToFile() {
+                                        await fs.writeFileSync(`index.html`, generateHTML(teamMembers))
+                                    }
+                                    writeToFile()
                                 }
                             })
                         }
@@ -120,6 +131,10 @@ async function executeInquirers() {
             } else {
                 console.log(`Exiting program`);
                 console.log(teamMembers);
+                async function writeToFile() {
+                    await fs.writeFileSync(`index.html`, generateHTML(teamMembers))
+                }
+                writeToFile()
             }
         })
 }
