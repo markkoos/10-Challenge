@@ -1,4 +1,4 @@
-function generateHTML(teamMembers) { 
+function generateHTML(team) { 
     return `<!DOCTYPE html>
     <html lang="en">
       <head>
@@ -11,9 +11,9 @@ function generateHTML(teamMembers) {
       </head>
       <body>
         <main>
-            <h1>Manager:${teamMembers.managerName}</h1>
-            <h1>Engineer:${teamMembers.engineerName}</h1>
-            <h1>intern:${teamMembers.internName}</h1>
+            <h1>Manager:${team.managerName}</h1>
+            <h1>Engineer:${team.engineerName}</h1>
+            <h1>intern:${team.internName}</h1>
         </main>
         <script src="index.js"></script>
       </body>
