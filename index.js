@@ -58,7 +58,7 @@ function executeInquirers() {
             const newEngineer = 
             new Engineer (
                 data.engineerName,
-                data.engineerId,
+                data.engineerID,
                 data.engineerEmail,
                 data.engineerGithub
             );
@@ -74,7 +74,7 @@ function executeInquirers() {
             const newIntern = 
             new Intern (
                 data.internName,
-                data.internId,
+                data.internID,
                 data.internEmail,
                 data.internSchool
             );
