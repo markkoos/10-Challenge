@@ -30,6 +30,4 @@ https://github.com/markkoos
 If you have any questions please send me an email: 
 markusimercado@gmail.com
 
-https://markkoos.github.io/06-Weather-Dashboard/
-
 [Video](https://youtu.be/i9OfWNQbBhk)
