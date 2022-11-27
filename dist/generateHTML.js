@@ -11,9 +11,9 @@ function generateHTML(team) {
       </head>
       <body>
         <main>
-            <h1>Manager:${team.managerName}</h1>
-            <h1>Engineer:${team.engineerName}</h1>
-            <h1>intern:${team.internName}</h1>
+            <h1>Manager:${team[0].name}</h1>
+            <h1>Id:${team[0].id}</h1>
+            <h1>Email:${team[0].email}</h1>
         </main>
         <script src="index.js"></script>
       </body>
